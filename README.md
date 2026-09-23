@@ -1,6 +1,6 @@
 # start-here
 
-<!-- TODO: replace with real GIF — terminal: `/start-here` → START_HERE.md in <60s -->
+![demo: npx start-here init → check → START_HERE.md](docs/demo.gif)
 
 **One command. One screen. You know the repo.**
 
