@@ -58,7 +58,7 @@ Map each applicable row to a **real path** (omit rows that don't apply):
 | Change UI | `pages/`, `views/`, `components/`, templates |
 | Change data/schema | `models/`, `schema*`, `migrations/`, `prisma/`, SQL |
 | Fix a bug in <domain> | file owning that path + nearest test |
-| Add a test | existing `*.test.*`, `*_test.*`, `tests/` |
+| Add a test | files matching `*.test.*`, `*.spec.*`, `*_test.*`, `test_*.py`, or dirs `tests/`, `__tests__/` — never match names like `Testimonials` |
 | Config / env | `.env.example`, `config/`, settings modules |
 | Deploy | Dockerfile, CI, `deploy/`, fly/railway/render configs |
 | Local dev loop | run script + hot-reload + test command |
