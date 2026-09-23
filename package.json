@@ -1,0 +1,44 @@
+{
+  "name": "start-here",
+  "version": "1.0.0",
+  "description": "One-screen onboarding brief (START_HERE.md) for any repo — Agent Skill for Claude Code, Codex, OpenCode, Cursor",
+  "type": "module",
+  "bin": {
+    "start-here": "bin/start-here.mjs"
+  },
+  "files": [
+    "bin/",
+    "skills/",
+    "examples/START_HERE.example.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node bin/start-here.mjs init",
+    "check": "node bin/start-here.mjs check",
+    "test": "node bin/start-here.mjs version"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "claude-code",
+    "codex",
+    "opencode",
+    "agent-skills",
+    "agentskills",
+    "onboarding",
+    "start-here",
+    "developer-tools",
+    "skill"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/start-here-dev/start-here.git"
+  },
+  "homepage": "https://github.com/start-here-dev/start-here",
+  "bugs": {
+    "url": "https://github.com/start-here-dev/start-here/issues"
+  }
+}
