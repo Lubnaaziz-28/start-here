@@ -141,7 +141,7 @@ Next:
   2. Run: /start-here
   3. Read START_HERE.md
 
-Docs: https://github.com/start-here-dev/start-here`);
+Docs: https://github.com/minoruthenextkami-afk/start-here`);
 }
 
 main().catch((err) => {

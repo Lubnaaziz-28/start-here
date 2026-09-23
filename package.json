@@ -35,10 +35,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/start-here-dev/start-here.git"
+    "url": "git+https://github.com/minoruthenextkami-afk/start-here.git"
   },
-  "homepage": "https://github.com/start-here-dev/start-here",
+  "homepage": "https://github.com/minoruthenextkami-afk/start-here",
   "bugs": {
-    "url": "https://github.com/start-here-dev/start-here/issues"
+    "url": "https://github.com/minoruthenextkami-afk/start-here/issues"
   }
 }

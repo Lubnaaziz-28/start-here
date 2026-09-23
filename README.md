@@ -56,7 +56,7 @@ Or copy the skill by hand:
 
 ```bash
 mkdir -p .claude/skills/start-here
-curl -fsSL https://raw.githubusercontent.com/start-here-dev/start-here/main/skills/start-here/SKILL.md \
+curl -fsSL https://raw.githubusercontent.com/minoruthenextkami-afk/start-here/main/skills/start-here/SKILL.md \
   -o .claude/skills/start-here/SKILL.md
 ```
 
