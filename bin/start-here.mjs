@@ -82,18 +82,38 @@ Flags:
   }
 
   if (cmd === "check") {
-    const all = [...TARGETS, ...GLOBAL];
-    let hit = 0;
-    for (const t of all) {
-      const abs = path.resolve(expand(t.dir));
+    const projectTargets = TARGETS;
+    const globalTargets = GLOBAL;
+    const wantGlobal = args.includes("--global") || args.includes("-g");
+    let projectHits = 0;
+    let globalHits = 0;
+    console.log("project:");
+    for (const t of projectTargets) {
+      const abs = path.resolve(t.dir);
       const ok = await exists(path.join(abs, "SKILL.md"));
-      if (ok) {
-        console.log(`  ok  ${t.id.padEnd(16)} ${t.dir}`);
-        hit++;
+      if (ok) projectHits++;
+      console.log(`  ${ok ? "ok" : "--"}  ${t.id.padEnd(16)} ${t.dir}`);
+    }
+    if (wantGlobal) {
+      console.log("global:");
+      for (const t of globalTargets) {
+        const abs = expand(t.dir);
+        const ok = await exists(path.join(abs, "SKILL.md"));
+        if (ok) globalHits++;
+        console.log(`  ${ok ? "ok" : "--"}  ${t.id.padEnd(16)} ${t.dir}`);
       }
     }
-    if (!hit) console.log("  no  skill not installed — run: npx start-here init");
-    process.exit(hit ? 0 : 1);
+    if (projectHits > 0) {
+      console.log(`\n  skill installed in project (${projectHits} harness${projectHits === 1 ? "" : "es"})`);
+      process.exit(0);
+    }
+    if (wantGlobal && globalHits > 0) {
+      console.log(`\n  skill only global (${globalHits}) — project not configured`);
+      console.log("  fix: npx start-here init");
+      process.exit(1);
+    }
+    console.log("\n  skill not installed in project — run: npx start-here init");
+    process.exit(1);
   }
 
   if (cmd !== "init") {
