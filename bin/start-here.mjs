@@ -144,7 +144,7 @@ Next:
   2. Run: /start-here
   3. Read START_HERE.md
 
-Docs: https://github.com/minoruthenextkami-afk/start-here`);
+Docs: https://github.com/Lubnaaziz-28/start-here`);
 }
 
 async function runCheck({ flags }) {

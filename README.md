@@ -1,6 +1,6 @@
 # start-here
 
-![demo: npx start-here init → check → START_HERE.md](https://raw.githubusercontent.com/minoruthenextkami-afk/start-here/main/docs/demo.gif)
+![demo: npx start-here init → check → START_HERE.md](https://raw.githubusercontent.com/Lubnaaziz-28/start-here/main/docs/demo.gif)
 
 **One command. One screen. You know the repo.**
 
@@ -57,7 +57,7 @@ Or copy the skill by hand:
 
 ```bash
 mkdir -p .claude/skills/start-here
-curl -fsSL https://raw.githubusercontent.com/minoruthenextkami-afk/start-here/main/skills/start-here/SKILL.md \
+curl -fsSL https://raw.githubusercontent.com/Lubnaaziz-28/start-here/main/skills/start-here/SKILL.md \
   -o .claude/skills/start-here/SKILL.md
 ```
 
