@@ -7,11 +7,11 @@ Agent Skill + tiny CLI that writes a one-screen `START_HERE.md` onboarding brief
 
 ## Run it
 
-| | Command |
-|--|--|
+| Step | Command |
+|------|---------|
 | Install | `npm ci` (none — zero deps; Node ≥18) |
 | Dev | edit `skills/start-here/SKILL.md` |
-| Test | `npm test` (prints version) |
+| Test | `npm test` (smoke suite) |
 | Build | n/a — plain ESM, no bundle |
 
 Stack: Node.js (ESM) · no runtime deps · Agent Skills `SKILL.md`
@@ -29,7 +29,7 @@ Stack: Node.js (ESM) · no runtime deps · Agent Skills `SKILL.md`
 | Test install | `node bin/start-here.mjs init && node bin/start-here.mjs check` |
 
 ## First PR (suggested)
-Replace the README GIF placeholder with a real 3–5s terminal capture, or add a `skills-ref validate` step in CI (`npx skills-ref validate ./skills/start-here`) so frontmatter regressions fail PRs.
+Add a `skills-ref validate ./skills/start-here` step to CI so frontmatter regressions fail PRs, and keep `npm test` green on every PR.
 
 ## Gotchas
 - Skill must be **copied** to each harness path — they do not read `skills/` root by default
