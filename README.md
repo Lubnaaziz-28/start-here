@@ -1,6 +1,6 @@
 # start-here
 
-![demo: npx start-here init → check → START_HERE.md](docs/demo.gif)
+![demo: npx start-here init → check → START_HERE.md](https://raw.githubusercontent.com/minoruthenextkami-afk/start-here/main/docs/demo.gif)
 
 **One command. One screen. You know the repo.**
 
@@ -49,6 +49,7 @@ npx start-here init --global
 npx start-here init --claude
 npx start-here init --codex
 npx start-here init --opencode
+npx start-here init --agents
 npx start-here init --cursor
 ```
 
@@ -85,8 +86,10 @@ See [`examples/START_HERE.example.md`](examples/START_HERE.example.md) — that'
 Minimal Express API that serves job listings…
 
 ## Run it
+| Step | Command |
+|------|---------|
 | Install | `npm ci` |
-| Dev     | `npm run dev` |
+| Dev | `npm run dev` |
 
 ## Where to change what
 | I want to… | Open |
@@ -110,7 +113,7 @@ Inside the agent: `/start-here` · `/start-here --force` (regenerate)
 ## Design rules (baked into the skill)
 
 1. Prose + tables only — no Mermaid, no node graphs  
-2. One screen (~80–120 lines)  
+2. One screen (target ~80–120 lines, hard cap ~130)  
 3. Real paths only — `unknown` over guessing  
 4. Run commands from real manifests, never invented  
 5. Task → file map, max 8 rows  

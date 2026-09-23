@@ -16,7 +16,7 @@
   "scripts": {
     "start": "node bin/start-here.mjs init",
     "check": "node bin/start-here.mjs check",
-    "test": "node bin/start-here.mjs version"
+    "test": "node test/smoke.mjs"
   },
   "engines": {
     "node": ">=18"

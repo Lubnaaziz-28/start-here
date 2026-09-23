@@ -78,8 +78,8 @@ Use this skeleton exactly (fill, don't pad):
 <1–2 sentences. Noun phrase purpose. No marketing.>
 
 ## Run it
-| | Command |
-|--|--|
+| Step | Command |
+|------|---------|
 | Install | `<from real manifest>` |
 | Dev | `<or unknown>` |
 | Test | `<or unknown>` |

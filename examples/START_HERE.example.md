@@ -7,8 +7,8 @@ Minimal Express API that serves job listings and writes an append-only applicati
 
 ## Run it
 
-| | Command |
-|--|--|
+| Step | Command |
+|------|---------|
 | Install | `npm ci` |
 | Dev | `npm run dev` |
 | Test | `npm test` |
